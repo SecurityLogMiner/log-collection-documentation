@@ -121,6 +121,7 @@ Sure, here's a list of five functional requirements for collecting and transport
 
 ## Visual Representations
 
+![](log-collection-visual "Log Collection System")
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
