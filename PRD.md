@@ -101,7 +101,19 @@ Sure, here's a list of five functional requirements for collecting and transport
 ---
 
 ## Non-functional Aspects
-
+1. **Latency**
+    - Response times should be less than 300ms
+    - Support a 50% increase in log traffic
+2. **Recovery**
+    - Failure recovery without data loss
+3. **Compatibility and Compliance**
+    - WCAG compliant
+    - Data protection compliant
+    - Device and system agnostic (windows/\*nix)
+4. **Documentation**
+    - User and developer documentation
+5. **Availability and Maintenance**
+    - 24/7 avaiability, except during scheduled maintenance periods
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
