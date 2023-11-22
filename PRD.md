@@ -33,7 +33,7 @@ of a service should have an efficient, secure method of doing so.
 
 ---
 
-## 2. Goals and Objectives
+## Goals and Objectives
 
 A stream of log events, provided by the client endpoint, will be packaged and
 transported to a central cloud server for storage and retrieval. 
@@ -47,7 +47,7 @@ complement the service the central storage server provides.
 
 ---
 
-## 3. User Personas and Scenarios
+## User Personas and Scenarios
 | **User**           | **Scenario** | **Priority** |
 |--------------------|--------------|--------------|
 | *Security Analyst* | As a security analyst, I want to be able to specify relevant log sources for my investigations. |  High   |
@@ -56,70 +56,68 @@ complement the service the central storage server provides.
 
 ---
 
-## 4. Functional Requirements
+## Functional Requirements
 
 ---
 
-## 5. Non-functional Aspects
+## Non-functional Aspects
 
 ---
 
-## 6. Visual Representations
+## Visual Representations
 
 ---
 
-## 7. User Experience and Usability Plan
+## User Experience and Usability Plan
 
 ---
 
-## 8. Technical Architecture
+## Technical Architecture
 
 ---
 
-## 9. Technology Choices
+## Technology Choices
 
 ---
 
-## 10. Timeline
+## Timeline
 
 ---
 
-## 11. Dependencies and Bottlenecks
+## Dependencies and Bottlenecks
 
 ---
 
-## 12. Testing Plan
+## Testing Plan
 
 ---
 
-## 13. Quality Assurance
+## Quality Assurance
 
 ---
 
-## 14. User Documentation and Support
-
-
----
-
-## 15. Ongoing Support and Updates
+## User Documentation and Support
 
 
 ---
 
-## 16. Feasibility
+## Ongoing Support and Updates
 
 
 ---
 
-## 17. Innovative Features
+## Feasibility
+
 
 ---
 
-## 18. Stakeholder Alignment
+## Innovative Features
+
+---
+
+## Stakeholder Alignment
 
 
-## 19. Change Management
+## Change Management
 
-Describe how changes to requirements will be addressed over time.
-
-## 20. Evaluation
+## Evaluation
