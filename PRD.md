@@ -100,7 +100,7 @@ Sure, here's a list of five functional requirements for collecting and transport
 
 ---
 
-## Non-functional Aspects
+## Non-functional Requirements
 1. **Latency**
     - Response times should be less than 300ms
     - Support a 50% increase in log traffic
