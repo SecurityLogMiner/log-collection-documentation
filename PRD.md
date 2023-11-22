@@ -45,6 +45,7 @@ the source of their logs and the central data-storage server.
 Compatibility with ElasticSearch should be available to the user that will
 complement the service the central storage server provides.
 
+[back to top](#table-of-contents)
 ---
 
 ## User Personas and Scenarios
@@ -54,70 +55,93 @@ complement the service the central storage server provides.
 | *IT Adminstrator*  | As an IT admin, I want an intuitive interface for configuring, initializing, and retrieving log data. | High | 
 | *Network Administrator* | As a Network admin, I want the retrieval of network-related logs to be supported for network analysis. | High |
 
+[back to top](#table-of-contents)
 ---
 
 ## Functional Requirements
 
+[back to top](#table-of-contents)
 ---
 
 ## Non-functional Aspects
 
+[back to top](#table-of-contents)
 ---
 
 ## Visual Representations
 
+[back to top](#table-of-contents)
 ---
 
 ## User Experience and Usability Plan
 
+[back to top](#table-of-contents)
 ---
 
 ## Technical Architecture
 
+[back to top](#table-of-contents)
 ---
 
 ## Technology Choices
 
+[back to top](#table-of-contents)
 ---
 
 ## Timeline
 
+[back to top](#table-of-contents)
 ---
 
+[back to top](#table-of-contents)
 ## Dependencies and Bottlenecks
 
+[back to top](#table-of-contents)
 ---
 
 ## Testing Plan
 
+[back to top](#table-of-contents)
 ---
 
 ## Quality Assurance
 
+[back to top](#table-of-contents)
 ---
 
 ## User Documentation and Support
 
 
+[back to top](#table-of-contents)
 ---
 
 ## Ongoing Support and Updates
 
 
+[back to top](#table-of-contents)
 ---
 
 ## Feasibility
 
 
+[back to top](#table-of-contents)
 ---
 
 ## Innovative Features
 
+[back to top](#table-of-contents)
 ---
 
 ## Stakeholder Alignment
 
+[back to top](#table-of-contents)
+---
 
 ## Change Management
 
+[back to top](#table-of-contents)
+---
+
 ## Evaluation
+
+[back to top](#table-of-contents)
