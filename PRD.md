@@ -64,8 +64,6 @@ complement the service the central storage server provides.
 
 ## Functional Requirements
 
-Sure, here's a list of five functional requirements for collecting and transporting data from a source to a destination over TCP (Transmission Control Protocol):
-
 1. **Data Collection:**
    - The system should be able to collect data from the specified source.
    - *Requirements:*
