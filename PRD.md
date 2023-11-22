@@ -27,13 +27,31 @@
 
 ## 1. Problem Statement
 
+Gathering data from arbitrary sources should not be a time-consuming task.
+Blueteams, network admins, and anyone wanting to record and store the events 
+of a service should have an efficient, secure method of doing so.
+
 ---
 
 ## 2. Goals and Objectives
 
+A stream of log events, provided by the client endpoint, will be packaged and
+transported to a central cloud server for storage and retrieval. 
+
+Whether on a windows or \*Nix-based endpoint, a user will be able to create an
+account, receive proper credentials, and establish a secure connection between
+the source of their logs and the central data-storage server.
+
+Compatibility with ElasticSearch should be available to the user that will
+complement the service the central storage server provides.
+
 ---
 
 ## 3. User Personas and Scenarios
+| **User** | **Feature** |**Priority** | **Priority** | **Issue** | **Dependencies** |
+|------------------|------------------|------------------|------------------|
+| *Security Analyst* | As a security analyst, I want to be able to specify
+relevant log sources for my investigations. |    | *Italic Cell*   |
 
 ---
 
