@@ -45,7 +45,8 @@ the source of their logs and the central data-storage server.
 Compatibility with ElasticSearch should be available to the user that will
 complement the service the central storage server provides.
 
-[back to top](#table-of-contents)
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## User Personas and Scenarios
@@ -55,94 +56,106 @@ complement the service the central storage server provides.
 | *IT Adminstrator*  | As an IT admin, I want an intuitive interface for configuring, initializing, and retrieving log data. | High | 
 | *Network Administrator* | As a Network admin, I want the retrieval of network-related logs to be supported for network analysis. | High |
 
-[back to top](#table-of-contents)
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## Functional Requirements
 
-[back to top](#table-of-contents)
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## Non-functional Aspects
 
-[back to top](#table-of-contents)
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## Visual Representations
 
-[back to top](#table-of-contents)
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## User Experience and Usability Plan
 
-[back to top](#table-of-contents)
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## Technical Architecture
 
-[back to top](#table-of-contents)
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## Technology Choices
 
-[back to top](#table-of-contents)
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## Timeline
 
-[back to top](#table-of-contents)
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
-[back to top](#table-of-contents)
+
 ## Dependencies and Bottlenecks
 
-[back to top](#table-of-contents)
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## Testing Plan
 
-[back to top](#table-of-contents)
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## Quality Assurance
 
-[back to top](#table-of-contents)
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## User Documentation and Support
 
 
-[back to top](#table-of-contents)
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## Ongoing Support and Updates
 
 
-[back to top](#table-of-contents)
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## Feasibility
 
 
-[back to top](#table-of-contents)
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## Innovative Features
 
-[back to top](#table-of-contents)
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## Stakeholder Alignment
 
-[back to top](#table-of-contents)
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## Change Management
 
-[back to top](#table-of-contents)
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 ---
 
 ## Evaluation
 
-[back to top](#table-of-contents)
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
+
