@@ -48,10 +48,10 @@ complement the service the central storage server provides.
 ---
 
 ## 3. User Personas and Scenarios
-
-| User               | Scenario     | Priority     | Dependencies     |
-|--------------------|--------------|--------------|------------------|
-| *Security Analyst* | As a security analyst, I want to be able to specify relevant log sources for my investigations. |  High   | TBD |
+| **User**           | **Scenario** | **Priority** |
+|--------------------|--------------|--------------|
+| *Security Analyst* | As a security analyst, I want to be able to specify relevant log sources for my investigations. |  High   |
+| *IT Adminstrator*  | As an IT admin, I want an intuitive interface for configuring, initializing, and retrieving log data. | High | 
 
 ---
 
