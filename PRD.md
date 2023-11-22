@@ -50,7 +50,7 @@ complement the service the central storage server provides.
 
 ---
 
-## User Personas and Scenarios
+## User Type and Scenarios
 | **User**           | **Scenario** | **Priority** |
 |--------------------|--------------|--------------|
 | *Security Analyst* | As a security analyst, I want to be able to specify relevant log sources for my investigations. |  High   |
