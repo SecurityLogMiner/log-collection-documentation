@@ -6,7 +6,7 @@
 2. [Goals and Objectives](#goals-and-objectives)
 3. [User Personas and Scenarios](#user-personas-and-scenarios)
 4. [Functional Requirements](#functional-requirements)
-5. [Non-functional Aspects](#non-functional-requirements)
+5. [Non-functional Requirements](#non-functional-requirements)
 6. [Visual Representations](#visual-representations)
 7. [User Experience and Usability Plan](#user-experience-and-usability-plan)
 8. [Technical Architecture](#technical-architecture)
