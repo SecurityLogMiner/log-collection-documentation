@@ -143,9 +143,22 @@ as the project progresses.
 
 ## Technical Architecture and Choices
 
-The service running on the client machin will be written in Rust
+The service running on the client machine will be written in Rust. The interface 
+for client machines will be written using Tauri, another Rust-based project.
 
-## Technology Choices
+The reason for Rust being its ability to write and compile to multiple 
+operating systems. Along with its platform versatility, Rust's *cargo* command 
+line tool has options for testing and documentation generation.
+
+Tauri makes GUI creation simple. Given its cross-platform compatibility, due to
+it being written in Rust, just makes sense.
+
+The service running on the server will be a mix of languages, such as Terraform,
+bash, Python, and Rust if needed. A relational database will be used, with
+options left open to the user for integration with ElasticSearch if they choose.
+
+The website providing the user signup, software distribution, and documentation
+will use Svelte. 
 
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
