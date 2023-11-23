@@ -4,7 +4,7 @@
 
 1. [Problem Statement](#problem-statement)
 2. [Goals and Objectives](#goals-and-objectives)
-3. [User Personas and Scenarios](#user-personas-and-scenarios)
+3. [User Type and Scenarios](#user-personas-and-scenarios)
 4. [Functional Requirements](#functional-requirements)
 5. [Non-functional Requirements](#non-functional-requirements)
 6. [Visual Representations](#visual-representations)
