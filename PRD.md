@@ -127,6 +127,13 @@ complement the service the central storage server provides.
 
 ## User Experience and Usability Plan
 
+Lets take a user, A, who just attached a new service on their machine and wants
+visibility on the data logs being generatad at a specific path. After creating
+an account on the product website, the user installs the product onto their 
+machine and supplies the credentials sent to them to establish a secure
+connection with their personal server instance. When the user begins sending data
+to the central server, their data is visible on their dashboard, streaming from
+the central server.
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
