@@ -135,6 +135,9 @@ connection with their personal server instance. When the user begins sending dat
 to the central server, their data is visible on their dashboard, streaming from
 the central server.
 
+We will make every attempt to ensure compatibility with users with disabilities
+as the project progresses.
+
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
