@@ -12,8 +12,7 @@
 8. [Technical Architecture and Choices](#technical-architecture-and-choices)
 9. [Timeline](#timeline)
 10. [Dependencies and Bottlenecks](#dependencies-and-bottlenecks)
-11. [Testing Plan](#testing-plan)
-12. [Quality Assurance](#quality-assurance)
+11. [Testing and Quality Assurance](#testing-and-quality-assurance)
 13. [User Documentation and Support](#user-documentation-and-support)
 14. [Ongoing Support and Updates](#ongoing-support-and-updates)
 15. [Feasibility](#feasibility)
@@ -167,28 +166,25 @@ will use Svelte.
 
 ## Timeline
 
+A MVP of this service should be up and running at month 7. This will give 2
+months for user testing.
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
-
 
 ## Dependencies and Bottlenecks
 
+Still todo but: team size, creating the in-house CA, using Rust
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
 
-## Testing Plan
+## Testing and Quality Assurance
 
-
-<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
-
----
-
-## Quality Assurance
-
+Between now and the 7th month, code and methods will be tested on a regular basis
+as outlined in the SDP document [PROVIDE LINK TO SDP README].
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -202,7 +198,6 @@ will use Svelte.
 ---
 
 ## Ongoing Support and Updates
-
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
