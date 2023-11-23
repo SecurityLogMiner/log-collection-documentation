@@ -9,19 +9,18 @@
 5. [Non-functional Requirements](#non-functional-requirements)
 6. [Visual Representations](#visual-representations)
 7. [User Experience and Usability Plan](#user-experience-and-usability-plan)
-8. [Technical Architecture](#technical-architecture)
-9. [Technology Choices](#technology-choices)
-10. [Timeline](#timeline)
-11. [Dependencies and Bottlenecks](#dependencies-and-bottlenecks)
-12. [Testing Plan](#testing-plan)
-13. [Quality Assurance](#quality-assurance)
-14. [User Documentation and Support](#user-documentation-and-support)
-15. [Ongoing Support and Updates](#ongoing-support-and-updates)
-16. [Feasibility](#feasibility)
-17. [Innovative Features](#innovative-features)
-18. [Stakeholder Alignment](#stakeholder-alignment)
-19. [Change Management](#change-management)
-20. [Evaluation](#evaluation)
+8. [Technical Architecture and Choices](#technical-architecture-and-choices)
+9. [Timeline](#timeline)
+10. [Dependencies and Bottlenecks](#dependencies-and-bottlenecks)
+11. [Testing Plan](#testing-plan)
+12. [Quality Assurance](#quality-assurance)
+13. [User Documentation and Support](#user-documentation-and-support)
+14. [Ongoing Support and Updates](#ongoing-support-and-updates)
+15. [Feasibility](#feasibility)
+16. [Innovative Features](#innovative-features)
+17. [Stakeholder Alignment](#stakeholder-alignment)
+18. [Change Management](#change-management)
+19. [Evaluation](#evaluation)
 
 ---
 
@@ -142,12 +141,9 @@ as the project progresses.
 
 ---
 
-## Technical Architecture
+## Technical Architecture and Choices
 
-
-<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
-
----
+The service running on the client machin will be written in Rust
 
 ## Technology Choices
 
