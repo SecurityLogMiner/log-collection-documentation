@@ -190,7 +190,7 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
 
 #### API Repo:
 **All api endpoints:**
-    1. Protect api endpoints through access verification
+1. Protect api endpoints through access verification
 
 **Public Key Infrastructure api endpoint must handle the following:**
 1. Issue certificates
@@ -205,14 +205,14 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
 10. Failure Recovery (offline masterkey) 
 
 **User management api endpoints must handle the following:**
-    1. Create, Read, Update, and Delete users
-    2. Account management (signin/out/delete,cert retrieval/renewal, etc.)
+1. Create, Read, Update, and Delete users
+2. Account management (signin/out/delete,cert retrieval/renewal, etc.)
 
 **Dashboard api endpoints must handle the following:**
-    1. Data visualization 
+1. Data visualization 
 
 **Software distribution api endpoints must handle the following:**
-    1. Provide links to download software for existing platforms
+1. Provide links to download software for existing platforms
 
 #### Frontend Repo:
 1. Provide the interface to interact with the API
