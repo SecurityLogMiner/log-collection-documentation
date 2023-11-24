@@ -188,7 +188,7 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
 
 ### Test Conditions to be met:
 
-#### API Repo:
+#### _API Repo:_
 **All api endpoints:**
 1. Protect api endpoints through access verification
 
