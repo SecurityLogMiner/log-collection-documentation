@@ -282,7 +282,7 @@ realistic expectations.
 ## Innovative Features
 
 There are no features that exist within this project that do not exist elsewhere.
-What makes this product stand out is its availability on platforms. The serice it
+What makes this product stand out is its availability on platforms. The service it
 provides could pave the way for innovative services due the product's core data
 collection service.
 
