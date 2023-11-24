@@ -262,7 +262,8 @@ the allowed [license](PROVIDE LINK TO SOFTWARE LICENSE).
 - **Minor**: new features
 - **Patch**: bug fixes
 
-Stable versions will be available on the Minor versions. 
+Stable versions will be available on the Minor versions due to feature
+availability.
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
