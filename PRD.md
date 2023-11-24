@@ -14,7 +14,7 @@
 10. [Dependencies and Bottlenecks](#dependencies-and-bottlenecks)
 11. [Testing and Quality Assurance](#testing-and-quality-assurance)
 13. [User Documentation and Support](#user-documentation-and-support)
-14. [Versioning](#versioning-and-updates)
+14. [Versioning](#versioning)
 15. [Feasibility](#feasibility)
 16. [Innovative Features](#innovative-features)
 17. [Stakeholder Alignment](#stakeholder-alignment)
@@ -256,15 +256,13 @@ the allowed [license](PROVIDE LINK TO SOFTWARE LICENSE).
 
 ---
 
-## Versioning and Updates
+## Versioning
 
 **Major**: breaking changes
 **Minor**: new features
 **Patch**: bug fixes
 
 Stable versions will be available on the Minor versions. 
-Updates to software will be accompanied by a 
-[Changelog](SUPPLY LINK TO CHANGELOG).
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -291,6 +289,9 @@ Updates to software will be accompanied by a
 ---
 
 ## Change Management
+
+Updates to software will be accompanied by a 
+[Changelog](SUPPLY LINK TO CHANGELOG).
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
