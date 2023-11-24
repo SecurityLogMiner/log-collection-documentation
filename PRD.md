@@ -226,7 +226,7 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
 
 #### Client Repo:
 1. Create a TLS connection with Server 
-2. Command line and GUI Interface to configure:
+2. Command line and Graphical Interface to configure:
     - the destination address
     - certificate (supplied from API repo
     - path(s) to log source(s)
