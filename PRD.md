@@ -193,16 +193,16 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
     1. Protect api endpoints through access verification
 
 **Public Key Infrastructure api endpoint must handle the following:**
-    1. Issue certificates
-    2. Verify the identity of the requesting user requesting a digital signature 
-    3. Revoke certifcates of specific users
-    4. Renew certificates of specific users
-    5. Key Pair storage and retrieval
-    6. Certificate policy (cert lifetime, validation, key length reqs, etc.)
-    7. Follows industry standards (x509, bitlength, cipher type, etc.)
-    8. PKI audit logging
-    9. PKI heirarchy (masterkey -> prodkey1 -> [prodkey2, ..., prodkeyN])
-    10. Failure Recovery (offline masterkey) 
+1. Issue certificates
+2. Verify the identity of the requesting user requesting a digital signature 
+3. Revoke certifcates of specific users
+4. Renew certificates of specific users
+5. Key Pair storage and retrieval
+6. Certificate policy (cert lifetime, validation, key length reqs, etc.)
+7. Follows industry standards (x509, bitlength, cipher type, etc.)
+8. PKI audit logging
+9. PKI heirarchy (masterkey -> prodkey1 -> [prodkey2, ..., prodkeyN])
+10. Failure Recovery (offline masterkey) 
 
 **User management api endpoints must handle the following:**
     1. Create, Read, Update, and Delete users
