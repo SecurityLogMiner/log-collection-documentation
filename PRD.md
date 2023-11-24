@@ -233,12 +233,23 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
     - certificate (supplied from API repo)
     - path(s) to log source(s)
 
+#### Documentation Repo:
+1. Provides setup intructions for:
+    - account managment
+    - certificate management
+    - client-server connection establishment
+
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
 
 ## User Documentation and Support
+User documentation will be written to satisfy the requirements of the 
+[documentation requirement section](#documentation-repo)
 
+Support for this project will come as new maintainers are added to the
+organization. Since this is an open-source project, forks will be possible under
+the allowed [license](PROVIDE LINK TO SOFTWARE LICENSE).
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
