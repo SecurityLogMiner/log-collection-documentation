@@ -14,7 +14,7 @@
 10. [Dependencies and Bottlenecks](#dependencies-and-bottlenecks)
 11. [Testing and Quality Assurance](#testing-and-quality-assurance)
 13. [User Documentation and Support](#user-documentation-and-support)
-14. [Ongoing Support and Updates](#ongoing-support-and-updates)
+14. [Versioning](#versioning-and-updates)
 15. [Feasibility](#feasibility)
 16. [Innovative Features](#innovative-features)
 17. [Stakeholder Alignment](#stakeholder-alignment)
@@ -238,6 +238,7 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
     - account managment
     - certificate management
     - client-server connection establishment
+    - changelog establishment
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -255,7 +256,15 @@ the allowed [license](PROVIDE LINK TO SOFTWARE LICENSE).
 
 ---
 
-## Ongoing Support and Updates
+## Versioning and Updates
+
+**Major**: breaking changes
+**Minor**: new features
+**Patch**: bug fixes
+
+Stable versions will be available on the Minor versions. 
+Updates to software will be accompanied by a 
+[Changelog](SUPPLY LINK TO CHANGELOG).
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
