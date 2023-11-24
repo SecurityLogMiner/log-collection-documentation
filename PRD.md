@@ -271,6 +271,9 @@ availability.
 
 ## Feasibility
 
+The initial team tasked with this project is capable but we recognize that this
+will be a considerable amount of work. A minimal viable product is not past
+realistic expectations.
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -278,6 +281,10 @@ availability.
 
 ## Innovative Features
 
+There are no features that exist within this project that do not exist elsewhere.
+What makes this product stand out is its availability on platforms. The serice it
+provides could pave the way for innovative services due the product's core data
+collection service.
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -286,6 +293,8 @@ availability.
 ## Stakeholder Alignment
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
+
+need feedback before sunday, nov 26
 
 ---
 
@@ -299,6 +308,9 @@ Updates to software will be accompanied by a
 ---
 
 ## Evaluation
+
+The success of this product will be determined by satisfying the defined 
+[testing conditions](#testing-and-quality-assurance).
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
