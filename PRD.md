@@ -258,9 +258,9 @@ the allowed [license](PROVIDE LINK TO SOFTWARE LICENSE).
 
 ## Versioning
 
-**Major**: breaking changes
-**Minor**: new features
-**Patch**: bug fixes
+- **Major**: breaking changes
+- **Minor**: new features
+- **Patch**: bug fixes
 
 Stable versions will be available on the Minor versions. 
 
