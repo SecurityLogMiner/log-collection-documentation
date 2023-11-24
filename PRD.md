@@ -189,10 +189,10 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
 ### Test Conditions to be met:
 
 #### API Repo:
-- All api endpoints:
+**All api endpoints:**
     1. Protect api endpoints through access verification
 
-- Public Key Infrastructure api endpoint must handle the following:
+**Public Key Infrastructure api endpoint must handle the following:**
     1. Issue certificates
     2. Verify the identity of the requesting user requesting a digital signature 
     3. Revoke certifcates of specific users
@@ -204,14 +204,14 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
     9. PKI heirarchy (masterkey -> prodkey1 -> [prodkey2, ..., prodkeyN])
     10. Failure Recovery (offline masterkey) 
 
-- User management api endpoints must handle the following:
+**User management api endpoints must handle the following:**
     1. Create, Read, Update, and Delete users
     2. Account management (signin/out/delete,cert retrieval/renewal, etc.)
 
-- Dashboard api endpoints must handle the following:
+**Dashboard api endpoints must handle the following:**
     1. Data visualization 
 
-- Software distribution api endpoints must handle the following:
+**Software distribution api endpoints must handle the following:**
     1. Provide links to download software for existing platforms
 
 #### Frontend Repo:
