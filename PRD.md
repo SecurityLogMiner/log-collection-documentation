@@ -238,7 +238,7 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
     - account managment
     - certificate management
     - client-server connection establishment
-    - changelog establishment
+2. Establish a changelog
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
