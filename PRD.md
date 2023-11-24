@@ -215,21 +215,21 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
     1. Provide links to download software for existing platforms
 
 #### Frontend Repo:
-    1. Provide the interface to interact with the API
-    2. Device agnostic
-    3. Contains links to User and Developer documentation
+1. Provide the interface to interact with the API
+2. Device agnostic
+3. Contains links to User and Developer documentation
 
 #### Server Repo:
-    1. Create a TLS connection with Client
-    2. Create a database specific to the user
-    3. Eash user database has a table for each input log source
+1. Create a TLS connection with Client
+2. Create a database specific to the user
+3. Eash user database has a table for each input log source
 
 #### Client Repo:
-    1. Create a TLS connection with Server 
-    2. Command line and GUI Interface to configure:
-        - the destination address
-        - certificate (supplied from API repo
-        - path(s) to log source(s)
+1. Create a TLS connection with Server 
+2. Command line and GUI Interface to configure:
+    - the destination address
+    - certificate (supplied from API repo
+    - path(s) to log source(s)
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
