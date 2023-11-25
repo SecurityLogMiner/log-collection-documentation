@@ -65,7 +65,6 @@ complement the service the central storage server provides.
 1. **Data Collection:**
    - The system should be able to collect data from the specified source.
    - *Requirements:*
-     - Use TLS certificates to connect to the data source securely.
      - Specify supported data formats for efficient data parsing.
 
 2. **TLS Connection Establishment:**
