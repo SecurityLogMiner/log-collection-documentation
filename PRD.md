@@ -212,7 +212,7 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
 #### Server Repo:
 1. Create a TLS connection with Client
 2. Create a database specific to the user
-3. Eash user database has a table for each input log source
+3. Each user database has a table for each input log source
 4. Delete database on user deletion
 5. Automate the initialization of Server Instance
 
