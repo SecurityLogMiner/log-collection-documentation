@@ -63,33 +63,24 @@ complement the service the central storage server provides.
 ## Functional Requirements
 
 1. **Data Collection:**
-   - The system should be able to collect data from the specified source.
-   - *Requirements:*
-     - Specify supported data formats for efficient data parsing.
+    - The system should be able to collect data from the specified source.
+    - Specify supported data formats for efficient data parsing.
 
 2. **TLS Connection Establishment:**
-   - The source should establish a TLS connection with the destination to ensure secure data transmission.
-   - *Requirements:*
-     - Implement TLS over TCP socket creation and management.
-     - Create, Update, and Revoke certificates with an in-house CA manager
+    - Implement TLS over TCP socket creation and management.
+    - Create, Update, and Revoke certificates with an in-house CA manager
 
-3. **Data Packaging and Serialization:**
-   - The collected data should be packaged and serialized for transmission over the TCP connection.
-   - *Requirements:*
-     - Implement serialization and deserialization for efficient data transfer.
+3. **Data Processing and Serialization:**
+    - The collected data should be processed and serialized for transmission over the TCP connection.
 
 4. **Error Handling and Reliability:**
-   - The system should handle errors gracefully and ensure reliable delivery of data even in the presence of network issues or packet loss.
-   - *Requirements:*
-     - Implement error detection and correction mechanisms.
-     - Use TCP over TLS for retransmission of lost or corrupted data.
-     - Implement system monitoring and alerting to reduce downtime during system degredation
+    - Implement error detection and correction mechanisms.
+    - TCP handles retransmission of lost or corrupted data.
+    - Implement system monitoring and alerting to reduce downtime during system degredation
 
 5. **Destination Data Reception:**
-   - The destination should be capable of receiving, processing, and storing the transmitted data.
-   - *Requirements:*
-     - Develop a system of database I/O.
-     - Create a procedure to integrate with ElasticSearch.
+    - Develop a system of database I/O.
+    - Create a procedure to integrate with ElasticSearch.
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
