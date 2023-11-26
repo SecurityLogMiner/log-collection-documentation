@@ -238,6 +238,7 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
     - certificate management
     - client-server connection establishment
 2. Establish a [Changelog](SUPPLY LINK TO CHANGELOG)
+3. Continuous Documentation Deployment here: https://securitylogminer-doc-repo.readthedocs.io/en/latest/
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
