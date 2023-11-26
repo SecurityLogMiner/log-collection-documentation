@@ -121,13 +121,16 @@ complement the service the central storage server provides.
 
 ## User Experience and Usability Plan
 
-Lets take a user, A, who just attached a new service on their machine and wants
-visibility on the data logs being generated from a specific path. After creating
-an account on the product website, the user installs the product onto their 
-machine and supplies the credentials sent to them to establish a secure
-connection with their personal server instance. When the user begins sending data
-to the central server, their data is visible on their dashboard, streaming from
-the central server.
+Suppose we have user, A who wants to access their log events from the server.
+They have attached a new service on their machine and wants visibility on data logs that are being generated from a specific path.
+User A accesses and interacts with the front-end implementation of the product.
+They are prompted to create an account or sign in to authenticate themselves.
+    As User A is a valid user, their IP address appears whitelisted on the server
+    They receive a certificate with a public key and aims to use the Cert AND Public key to connect to the centralized server using a client software.
+        Simply put, a valid user account is needed to observe a legitimate IPS match with the public keys present in the certificate.
+A secure connection is established with their personal server instance.
+As User A begins sending data to the centralized server, the data that is actively sent is visible on display on the service dashboard.
+
 
 We will make every attempt to ensure compatibility with users with disabilities
 as the project progresses.
