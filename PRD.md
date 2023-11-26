@@ -242,6 +242,10 @@ Support for this project will come as new maintainers are added to the
 organization. Since this is an open-source project, forks will be possible under
 the allowed [license](PROVIDE LINK TO SOFTWARE LICENSE).
 
+Documentation is setup and hosted on Read The Docs. This type of integration allows for continuous updates to the documentation, whenever a development change occurs. Whenever updates are pushed to our documentation repository on GitHub, Read the Docs automatically rebuilds the documentation, ensuring that users always have access to the most current information. 
+
+Linked documentation: https://securitylogminer-doc-repo.readthedocs.io/en/latest/
+
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
