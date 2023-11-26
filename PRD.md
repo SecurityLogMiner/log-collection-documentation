@@ -203,6 +203,9 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
 - **User management api endpoints must handle the following:**
     1. Create, Read, Update, and Delete users
     2. Account management (signin/out/delete,cert retrieval/renewal, etc.)
+    3. Grant or revoke user certification.
+    4. Whitelist specific IP addresses.
+    5. Key-value to certificate matching for user authentication.
 
 - **Dashboard api endpoints must handle the following:**
     1. Data visualization 
