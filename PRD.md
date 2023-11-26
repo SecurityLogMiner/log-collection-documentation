@@ -76,11 +76,17 @@ complement the service the central storage server provides.
 4. **Error Handling and Reliability:**
     - Implement error detection and correction mechanisms.
     - TCP handles retransmission of lost or corrupted data.
-    - Implement system monitoring and alerting to reduce downtime during system degredation
+    - Implement system monitoring and alerting to reduce downtime during system degradation
 
 5. **Destination Data Reception:**
     - Develop a system of database I/O.
     - Create a procedure to integrate with ElasticSearch.
+      
+6. **User Authentication:**
+    - Whitelist specific user IP addresses.
+    - Key-value store mapping users to certificates.
+    - Mechanism for revoking certificates if needed.
+    - Create keys for the user to match certificate values.
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -99,7 +105,7 @@ complement the service the central storage server provides.
 4. **Documentation**
     - User and developer documentation
 5. **Availability and Maintenance**
-    - 24/7 avaiability, except during scheduled maintenance periods
+    - 24/7 availability, except during scheduled maintenance periods
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -116,7 +122,7 @@ complement the service the central storage server provides.
 ## User Experience and Usability Plan
 
 Lets take a user, A, who just attached a new service on their machine and wants
-visibility on the data logs being generatad from a specific path. After creating
+visibility on the data logs being generated from a specific path. After creating
 an account on the product website, the user installs the product onto their 
 machine and supplies the credentials sent to them to establish a secure
 connection with their personal server instance. When the user begins sending data
@@ -147,7 +153,7 @@ The service running on the server will be a mix of languages, such as Terraform,
 shell, Python, and Rust if needed. A relational database will be used, with
 options left open to the user for integration with ElasticSearch if they choose.
 
-The website providing the user signup, software distribution, and documentation
+The website provides the user signup, software distribution, and documentation
 will use Svelte. 
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
@@ -156,7 +162,7 @@ will use Svelte.
 
 ## Timeline
 
-A MVP of this service should be up and running at month 7. This will give 2
+An MVP of this service should be up and running at month 7. This will give 2
 months for user testing.
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
@@ -179,19 +185,19 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
 ### Test Conditions to be met:
 
 #### API Repo:
-- **All api endpoints:**
-    1. Protect api endpoints through access verification
+- **All API endpoints:**
+    1. Protect API endpoints through access verification
 
-- **Public Key Infrastructure api endpoint must handle the following:**
+- **Public Key Infrastructure API endpoint must handle the following:**
     1. Issue certificates
     2. Verify the identity of the requesting user requesting a digital signature 
-    3. Revoke certifcates of specific users
+    3. Revoke certificates of specific users
     4. Renew certificates of specific users
     5. Key Pair storage and retrieval
     6. Certificate policy (cert lifetime, validation, key length reqs, etc.)
     7. Follows industry standards (x509, bitlength, cipher type, etc.)
     8. PKI audit logging
-    9. PKI heirarchy (masterkey -> prodkey1 -> [prodkey2, ..., prodkeyN])
+    9. PKI hierarchy (masterkey -> prodkey1 -> [prodkey2, ..., prodkeyN])
     10. Failure Recovery (offline masterkey) 
 
 - **User management api endpoints must handle the following:**
@@ -224,8 +230,8 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
     - path(s) to log source(s)
 
 #### Documentation Repo:
-1. Provides setup intructions for:
-    - account managment
+1. Provides setup instructions for:
+    - account management
     - certificate management
     - client-server connection establishment
 2. Establish a [Changelog](SUPPLY LINK TO CHANGELOG)
@@ -284,7 +290,7 @@ collection service.
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
-need feedback before sunday, nov 26
+need feedback before Sunday, nov 26
 
 ---
 
