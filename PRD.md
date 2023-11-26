@@ -106,6 +106,8 @@ complement the service the central storage server provides.
     - User and developer documentation
 5. **Availability and Maintenance**
     - 24/7 availability, except during scheduled maintenance periods
+6. **Installability (server/client components)**
+    - Easy to perform, fast, and well explained through documentation 
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -162,8 +164,8 @@ will use Svelte.
 
 ## Timeline
 
-An MVP of this service should be up and running at month 7. This will give 2
-months for user testing.
+An MVP of this service should be up and running at month 3. This will give 4
+months for user testing/additional development.
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
