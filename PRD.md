@@ -301,9 +301,9 @@ collection service.
 
 ## Stakeholder Alignment
 
-<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
-
 Stakeholder approves of overall project vision. 
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
 
