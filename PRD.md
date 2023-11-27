@@ -303,7 +303,7 @@ collection service.
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
-need feedback before Sunday, nov 26
+Stakeholder approves of overall project vision. 
 
 ---
 
