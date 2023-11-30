@@ -17,21 +17,51 @@
 14. [Testing Strategy](#testing-strategy)
 15. [Glossary](#glossary)
 
+---
+
 ## Introduction
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
+
+---
 
 ## Architectural Goals and Principles
 
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
+
+---
+
 ## System Overview
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
+
+---
 
 ## Architectural Patterns
 
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
+
+---
+
 ## Component Descriptions
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
+
+---
 
 ## Data Management
 
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
+
+---
+
 ## Interface Design
 
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
+
+---
 ## Considerations
+
 
 ### Security
 
@@ -39,8 +69,20 @@
 
 ### Maintenance and Support
 
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
+
+---
+
 ## Testing Strategy
 
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
+
+---
+
 ## Glossary
+
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
+
+---
 
 
