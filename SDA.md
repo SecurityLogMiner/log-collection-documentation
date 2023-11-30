@@ -21,11 +21,27 @@
 
 ## Introduction
 
+This document will outline the architecture for a command line-based security logger system where blue team members can access security logs from a centralized server. The project will use OS APIs to read log data and send it to a centralized processing and database server. The server will be plugged into an Elastic stack for more efficient visualization and investigative functionality. 
+
+The log collection service should take an event log, process each event line, and send the data to a central server. The priority is the confidentiality, integrity, and availability of all data flowing through this service pipeline.
+
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
+
+The main architectural goals and principles are security, scalability, abstraction, and modularity.
+Architectural principles include Maintaining proper software security practices, designing systems into hierarchies, striving for feature flexibility, and performing capable tests to ensure good performance.
 
 ---
 
 ## Architectural Goals and Principles
+
+An open-source tool that is available to users. The application will live and function on various platforms and operating systems, which will be tested through deployment on VMS.
+The centralized server is expected to run on a Linux server to receive all the event logs sent by machines. AWS will deploy the server.
+
+Starting at the Data Source, event lines are sent to the Data Processing and Monitoring module, where they are serialized and staged to be sent across the network. The internal communication will be managed through sockets while the external communication is handled by WebSockets, allowing for low-latency monitoring and data feeding. 
+
+![](log-collection-visual.png "Log Collection System")
+
+
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
