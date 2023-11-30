@@ -27,20 +27,12 @@ The log collection service should take an event log, process each event line, an
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
-The main architectural goals and principles are security, scalability, abstraction, and modularity.
-Architectural principles include Maintaining proper software security practices, designing systems into hierarchies, striving for feature flexibility, and performing capable tests to ensure good performance.
-
 ---
 
 ## Architectural Goals and Principles
 
-An open-source tool that is available to users. The application will live and function on various platforms and operating systems, which will be tested through deployment on VMS.
-The centralized server is expected to run on a Linux server to receive all the event logs sent by machines. AWS will deploy the server.
-
-Starting at the Data Source, event lines are sent to the Data Processing and Monitoring module, where they are serialized and staged to be sent across the network. The internal communication will be managed through sockets while the external communication is handled by WebSockets, allowing for low-latency monitoring and data feeding. 
-
-![](log-collection-visual.png "Log Collection System")
-
+The main architectural goals and principles are security, scalability, abstraction, and modularity.
+Architectural principles include Maintaining proper software security practices, designing systems into hierarchies, striving for feature flexibility, and performing capable tests to ensure good performance.
 
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
@@ -49,11 +41,31 @@ Starting at the Data Source, event lines are sent to the Data Processing and Mon
 
 ## System Overview
 
+An open-source tool that is available to users. The application will live and function on various platforms and operating systems, which will be tested through deployment on VMS.
+The centralized server is expected to run on a Linux server to receive all the event logs sent by machines. AWS will deploy the server.
+
+Starting at the Data Source, event lines are sent to the Data Processing and Monitoring module, where they are serialized and staged to be sent across the network. The internal communication will be managed through sockets while the external communication is handled by WebSockets, allowing for low-latency monitoring and data feeding. 
+
+![](log-collection-visual.png "Log Collection System")
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
 
 ## Architectural Patterns
+We will use event-sourcing, producer/consumer, and some form of layering.
+
+### Client Server Pattern
+The client-server model, where the clients on endpoints send security logs to a centralized server for processing and storage. This pattern provides centralized management of log data. We will adapt the client-server model, event-sourcing, and microservices patterns. 
+
+### Microservices Pattern
+Break down the centralized processing and database server into microservices, each responsible for a specific aspect of log processing. This can make updates and maintenance easier.
+
+### Pub-sub Pattern
+Implement a publish-subscribe system for the central server to distribute log data efficiently. This can help in managing the asynchronicity of log data collection.
+
+### Event Sourcing Pattern:
+For real-time data handling, this pattern can be beneficial to stream and store log data continuously. It's flexible for handling real-time data and events.
+
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -97,6 +109,11 @@ Starting at the Data Source, event lines are sent to the Data Processing and Mon
 
 ## Glossary
 
+| **Term**           | **Scenario** |
+|--------------------|--------------|
+| *User Interface* |  User interactions and managed by a front end implementation.|
+| *Backend Server*  |  Processes requests, business logic, and interfaces with the database. |
+| *Database* |Stores and manages data within a database for event logs in AWS. |
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
