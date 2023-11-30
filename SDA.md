@@ -109,11 +109,20 @@ For real-time data handling, this pattern can be beneficial to stream and store 
 
 ## Glossary
 
-| **Term**           | **Scenario** |
+| **Terminology**           | **Definition** |
 |--------------------|--------------|
 | *User Interface* |  User interactions and managed by a front end implementation.|
 | *Backend Server*  |  Processes requests, business logic, and interfaces with the database. |
 | *Database* |Stores and manages data within a database for event logs in AWS. |
+| *Data Producer* | Grabs a raw line from event log |
+| *Data Consumer* | Parses raw line using config format |
+| *Collector* | Formatted and Serialized data is queued for Sender |
+| *Sender* | Depending on central server status, the data is sent to its location|
+| *Listeners* | Listen for status |
+| *API* | Application Programming Interface: provides an interface for working with their specified components|
+| *Central Server| The destination of formatted event logs |
+| *Offline Storage* | Data resevoir for redundancy/recovery if needed.|
+
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
