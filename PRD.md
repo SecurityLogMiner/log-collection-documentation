@@ -143,7 +143,6 @@ When they have successfully authenticated, full visibility of log data will be
 available. The user will be able to interact with each log source, download their
 data from the central server, and add/remove log sources.
 
-
 We will make every attempt to ensure compatibility with users with disabilities
 as the project progresses.
 
@@ -311,9 +310,9 @@ collection service.
 
 ## Stakeholder Alignment
 
-<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
+Stakeholder approves of overall project vision. 
 
-need feedback before Sunday, nov 26
+<a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
 
