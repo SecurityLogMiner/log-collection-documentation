@@ -32,7 +32,7 @@ The log collection service should take an event log, process each event line, an
 ## Architectural Goals and Principles
 
 The main architectural goals and principles are security, scalability, abstraction, and modularity.
-Architectural principles include Maintaining proper software security practices, designing systems into hierarchies, striving for feature flexibility, and performing capable tests to ensure good performance.
+Architectural principles include maintaining proper software security practices, designing systems into hierarchies, striving for feature flexibility, and performing capable tests to ensure good performance.
 
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
@@ -73,6 +73,90 @@ For real-time data handling, this pattern can be beneficial to stream and store 
 
 ## Component Descriptions
 
+### Web Frontend component:
+The web frontend will provide the user registration, account login, and distribution 
+of the following:
+- TLS certificates and their private keys
+- ability to copy their OTP data (important because it is not preserved)
+- software binary distribution.
+- quick glance of existing log sources (not the log data itself)
+- The instance IP and port connected to their account
+
+The web frontend will also house the user documentation. See (documentation)[#documentation-component] section.
+
+Repo: (web frontend)[https://github.com/SecurityLogMiner/log-collection-frontend]
+
+### Client component:
+The client will consist of a GUI (default) that prompts the user to provide either 
+their OTP or user/pass. Once authenticated, the user will have full visibility of 
+log data. The user will be able to interact with each log source, download log 
+data from the central server, and add/remove log sources.
+
+While the default frontend will be a GUI, the user has the option of running the
+software from a command-line interface. 
+
+In either case, the client frontend will use the same functionality to accomplish
+the tasks.
+
+From either the GUI or command-line interface, the user will provide
+configuration file that contains a path (or paths) to the log sources, the format
+of the log for each of the supplied paths, a destination IP/port, and the
+certificate and private key information they were supplied from the web
+interface.
+
+Repo: (client)[https://github.com/SecurityLogMiner/log-collection-client]
+
+### API component:
+This component of the product will handle all the requests from the client, and
+on behalf of the client, including:
+- account creation/deletion/authentication
+- software distribution
+- certificate download
+- certificate revokation/renewal
+- Single OTP issuance 
+- user list retrieval (server only)
+- instance configuration
+
+These api endpoints must also be protected. The server component must be the only
+entity that is allowed to revoke and renew certificates, issue OTPs, and retrieve a
+list of existing users.
+
+Each client should be able to access account information by providing api
+verification tokens.
+
+Repo: (api)[https://github.com/SecurityLogMiner/log-collection-api]
+
+### Server component:
+Considering that the central server will be a destination for many users, it is
+important that this component of the project can scale in the future. For now,
+during beta testing, the server should be able to create isolated instances for
+each user that is generating incoming logs.
+
+Each instance will be tied to a user using a unique key generated an existing, 
+(and validated) user. Each instance will store the incoming logs into a database 
+instance and provide an extension to ElasticSearch should the user want that 
+additional functionality.
+
+Repo: (server)[https://github.com/SecurityLogMiner/log-collection-server]
+
+### Documentation component:
+It does not have to be complicated but it must be organized. Projects die when
+the documentation is either unavailable or lacks enough information to help users
+(and developers) get started.
+
+At a minimum, the user documentation should include the following:
+1. Getting Started:
+    - how to create an account
+    - how to install software
+    - how to run the client
+    - configuration guidelines
+
+2. Dashboard Information:
+    - layout
+    - how to view logs
+
+3. What else?
+
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
@@ -88,10 +172,12 @@ For real-time data handling, this pattern can be beneficial to stream and store 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
+
 ## Considerations
 
 
 ### Security
+Focus on: Confidentiality, Integrity, Availability
 
 ### Performance
 
