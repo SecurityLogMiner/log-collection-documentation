@@ -123,16 +123,25 @@ complement the service the central storage server provides.
 
 ## User Experience and Usability Plan
 
-Suppose we have user, A who wants to access their log events from the server.
-They have attached a new service on their machine and wants visibility on data logs that are being generated from a specific path.
-User A accesses and interacts with the front-end implementation of the product.
-They are prompted to create an account or sign in to authenticate themselves.
-    As User A is a valid user, their IP address appears whitelisted on the server
-    They receive a certificate with a public key and aims to use the Cert AND Public key to connect to the centralized server using a client software.
-        Simply put, a valid user account is needed to observe a legitimate IPS match with the public keys present in the certificate.
-A secure connection is established with their personal server instance.
-As User A begins sending data to the centralized server, the data that is actively sent is visible on display on the service dashboard.
+A first-time user will navigate to the product page (frontend repo) read about
+the product software, and make a decision about whether this service fits their
+needs. If their needs can be met with service provided, they will create an
+account and be redirected to their account dashboard.
 
+From their account dashboard, they will be able to:
+- download their certificate and private key
+- download the sofware along with the license
+- copy their one-time-password (OTP) information (important)
+- view existing log sources (not the data) being collected
+
+The user will install the software (Tauri app) onto their machine.
+
+When that process is complete, they will run the binary (doubleclick/cli) and be
+presented with a login screen where they will enter their OTP (or user/pass).
+
+When they have successfully authenticated, full visibility of log data will be 
+available. The user will be able to interact with each log source, download their
+data from the central server, and add/remove log sources.
 
 We will make every attempt to ensure compatibility with users with disabilities
 as the project progresses.
