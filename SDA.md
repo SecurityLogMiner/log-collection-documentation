@@ -162,6 +162,47 @@ At a minimum, the user documentation should include the following:
 
 ## Data Management
 
+### Client data:
+Incoming log data will be defined using the configuration file located on the
+client. The current format is:
+```
+# server address to connect to:
+server_address 0.0.0.0 
+
+# Server port to use:
+server_port 54321
+
+# Format of log file:
+field_values field_1 field_2 ... field_n
+
+# Path to TLS Credentials:
+credentials path/to/creds
+
+# Path to Private key:
+pkey path/to/private/key
+```
+
+### Server data:
+Each user will require an isolated database instance and each log source will be
+stored in a corresponding table. 
+
+#### user-uuid table:
+The user database will contain all the users that have created an account and
+will be mapped to a unique user id using a key:value structure. The key will be
+encrypted and only available to the server using the server's private key. Access
+Control lists should be established to protect this private key until an
+improvement is proposed.
+
+#### uuid-ip table:
+Using the unique user id will identify the instance database containing the IP
+and port information of all users.
+
+#### uuid-cert table:
+The unique user id and certificate info, where the certificate information is
+encrypted using the CLIENT's public key and can only be decrypted using the
+CLIENT's private key. The server will not have access to the data, other than
+deleting the key value pair and reissuing a certificate.
+
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
