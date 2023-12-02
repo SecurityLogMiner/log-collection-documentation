@@ -34,7 +34,6 @@ The log collection service should take an event log, process each event line, an
 The main architectural goals and principles are security, scalability, abstraction, and modularity.
 Architectural principles include maintaining proper software security practices, designing systems into hierarchies, striving for feature flexibility, and performing capable tests to ensure good performance.
 
-
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
@@ -173,10 +172,12 @@ At a minimum, the user documentation should include the following:
 
 ---
 
+
 ## Considerations
 
 
 ### Security
+
 Focus on: Confidentiality, Integrity, Availability
 
 ### Performance
