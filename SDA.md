@@ -87,8 +87,8 @@ and store log data continuously.
 ## Component Descriptions
 
 ### Web Frontend component:
-The web frontend will provide the user registration, account login, and distribution 
-interface for the following:
+The web frontend will provide the user registration, account login, and distribution interface for the following:
+
 - TLS certificates and their private keys
 - ability to copy their OTP (important because message key is not preserved)
 - software binary distribution.
@@ -131,8 +131,7 @@ on behalf of the client, including:
 - instance configuration
 
 These api endpoints must also be protected. The server component must be the only
-entity that is allowed to revoke and renew certificates, issue OTPs, and retrieve a
-list of existing users. 
+entity that is allowed to revoke and renew certificates, issue OTPs, and retrieve a list of existing users. 
 
 Taking actions on behalf of the user requires that the client verify themselves 
 with a OTP or user/pass combination. When the endpoint receives the request, the 
@@ -169,8 +168,8 @@ important that this component of the project can scale in the future. For now,
 during beta testing, the server should be able to create isolated instances for
 each user that is generating incoming logs.
 
-Each instance will be tied to a user using a unique key generated an existing, 
-and validated, user. Each instance will store the incoming logs into a database 
+Each instance will be tied to a user using a unique key generated an existing, and validated, user. 
+Each instance will store the incoming logs into a database 
 instance and provide an extension to ElasticSearch should the user want that 
 additional functionality.
 
@@ -264,6 +263,8 @@ key will have to be randomly generated using openssl-genpkey. The client's
 private key should not be stored on the server but the server will have read 
 access to the user and uuid tables. If the user deletes their account, their
 information should be removed from all databases and tables.
+
+Focus on: Confidentiality, Integrity, Availability
 
 ### Performance
 Long-term goal is that the server is able to scale the database instances for all
