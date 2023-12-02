@@ -201,7 +201,7 @@ and port information of all users.
 The unique user id and certificate info, where the certificate information is
 encrypted using the CLIENT's public key and can only be decrypted using the
 CLIENT's private key. The server will not have access to the data, other than
-deleting the key value pair and reissuing a certificate.
+deleting the key value pair and reissuing a certificate. 
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -220,6 +220,12 @@ deleting the key value pair and reissuing a certificate.
 ### Security
 
 Focus on: Confidentiality, Integrity, Availability
+
+The server will generate the client's certificate and private key. This private
+key will have to be randomly generated using openssl-genpkey. The client's
+private key should not be stored on the server but the server will have read 
+access to the user and uuid tables. If the user deletes their account, their
+information should be removed from all databases and tables.
 
 ### Performance
 
