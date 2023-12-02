@@ -187,7 +187,7 @@ Focus on: Confidentiality, Integrity, Availability
 
 ---
 
-## Testing Strategy
+# Testing Strategy
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
