@@ -8,12 +8,19 @@ Welcome to Secure Centralized Logging System's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Group Documents
-
-   PRD
-
-   SDP
+   :caption: For Users
    
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: For Developers
+
+   Product Requirements Document <PRD>
+
+   Software Development Process <SDP>
+
+   Software Design & Architecture 
 
 
 
