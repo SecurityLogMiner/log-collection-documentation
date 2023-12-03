@@ -1,4 +1,4 @@
-In Progress documentation project:
+Version 0.1
 =======================================
 
 
