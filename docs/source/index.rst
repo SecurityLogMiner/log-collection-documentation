@@ -10,11 +10,8 @@ Welcome to Secure Centralized Logging System's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   Product Requirements PRD.md 
+
+
+Product Requirements PRD.md 
   
-   Software Development Process SDP.md
-
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+Software Development Process SDP.md
