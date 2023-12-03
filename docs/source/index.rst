@@ -11,7 +11,7 @@ Welcome to Secure Centralized Logging System's documentation!
 
    PRD.md 
   
-   SDP
+   SDP.md
    
 
 
