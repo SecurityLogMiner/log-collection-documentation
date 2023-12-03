@@ -104,7 +104,7 @@ The web frontend will provide the user registration, account login, and distribu
 
 The web frontend will also house the user documentation. See (documentation)[#documentation-component] section.
 
-Repo: (web frontend)[https://github.com/SecurityLogMiner/log-collection-frontend]
+Repo: [Web Front-End](https://github.com/SecurityLogMiner/log-collection-frontend)
 
 ### Client Component
 The client will consist of a GUI (default) that prompts the user to provide either 
@@ -124,7 +124,7 @@ of the log for each of the supplied paths, a destination IP/port, and the
 certificate and private key information they were supplied from the web
 interface.
 
-Repo: (client)[https://github.com/SecurityLogMiner/log-collection-client]
+Repo: [client](https://github.com/SecurityLogMiner/log-collection-client)
 
 ### API Component
 This component of the product will handle all the requests from the client, and
@@ -167,7 +167,7 @@ Example Endpoints:
     - post request the passes a json object containing the items in the
       configuration file.
 
-Repo: (api)[https://github.com/SecurityLogMiner/log-collection-api]
+Repo: [api](https://github.com/SecurityLogMiner/log-collection-api)
 
 ### Server Component
 Considering that the central server will be a destination for many users, it is
@@ -180,7 +180,7 @@ Each instance will store the incoming logs into a database
 instance and provide an extension to ElasticSearch should the user want that 
 additional functionality.
 
-Repo: (server)[https://github.com/SecurityLogMiner/log-collection-server]
+Repo: [server][https://github.com/SecurityLogMiner/log-collection-server]
 
 ### Documentation Component
 It does not have to be complicated but it must be organized. Projects die when
