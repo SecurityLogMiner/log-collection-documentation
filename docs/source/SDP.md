@@ -1,4 +1,3 @@
-# log-collection-documentation
 # Software Development Process README
 
 ## Table of Contents
