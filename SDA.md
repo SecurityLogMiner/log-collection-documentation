@@ -180,7 +180,7 @@ Each instance will store the incoming logs into a database
 instance and provide an extension to ElasticSearch should the user want that 
 additional functionality.
 
-[Server Repository][https://github.com/SecurityLogMiner/log-collection-server]
+[Server Repository](https://github.com/SecurityLogMiner/log-collection-server)
 
 ### Documentation Component
 It does not have to be complicated but it must be organized. Projects die when
