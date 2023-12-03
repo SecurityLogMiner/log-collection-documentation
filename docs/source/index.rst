@@ -8,13 +8,21 @@ Welcome to Secure Centralized Logging System's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: For Users
+
+   /userDocs/gettingStarted
+   /userDocs/dashInfo
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: For Developers
+
+   Product Requirements Document <PRD>
+
+   Software Development Process <SDP>
+
+   Software Design & Architecture 
 
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

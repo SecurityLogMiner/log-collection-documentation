@@ -65,6 +65,7 @@ TLS over TCP sockets, allowing for low-latency monitoring and data feeding.
 
 ---
 
+
 ## Architectural Pattern
 We will adapt the client-server, producer-consumer, event-sourcing, and 
 microservices patterns. 
@@ -92,6 +93,7 @@ and store log data continuously.
 ---
 
 ## Component Descriptions
+
 
 ### Web Front-End Component
 The web frontend will provide the user registration, account login, and distribution interface for the following:
@@ -152,7 +154,9 @@ in a safe location.
 Each client should be able to access account information by providing api
 verification tokens.
 
+
 Example Endpoints:
+
 - /users
     - returns list of users (server access only)
 - /revoke/user
@@ -204,6 +208,7 @@ At a minimum, the user documentation should include the following:
 
 ## Data Management
 
+
 ### Client Data
 Incoming log data will be defined using the configuration file located on the
 client. The current format is:
@@ -223,6 +228,7 @@ credentials path/to/creds
 # Path to Private key:
 pkey path/to/private/key
 ```
+
 
 ### Server Data
 Each user will require an isolated database instance and each log source will be
@@ -287,6 +293,7 @@ users using the service.
 While system dependent, the client should be able to handle around 5K events per 
 second. Read the following for Event-Per-Second:
 
+
 [Event Per Second](https://content.solarwinds.com/creative/pdf/Whitepapers/estimating_log_generation_white_paper.pdf)
 
 ### Maintenance and Support
@@ -294,6 +301,7 @@ Members of the organization are able to help maintain the project, with a
 handful of CODEOWNERS that help guide the updates as the project grows.
 
 Anyone using the product will be able to submit issues that will be used to
+
 make improvements and take suggestions under consideration.
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
