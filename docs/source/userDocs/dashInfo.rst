@@ -3,10 +3,10 @@ Dashboard Information
 
 
 
-Layout Overview:
+Layout Overview
 -------------------------------
 
 
 
-Viewing Logs:
+Viewing Logs
 -------------------------------
