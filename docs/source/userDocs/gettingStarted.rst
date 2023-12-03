@@ -1,22 +1,22 @@
-Getting Started:
+Getting Started
 ================
   
 
 
-Creating an Account:
+Creating an Account
 --------------------------
 
 
 
-Installation: 
+Installation
 ------------------
 
 
 
-Running the Client:
+Running the Client
 -------------------------------
 
 
 
-Configuration Guidelines:
+Configuration Guidelines
 -------------------------------
