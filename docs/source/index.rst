@@ -8,10 +8,11 @@ Welcome to Secure Centralized Logging System's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-
-
-Product Requirements PRD.md 
+   Product Requirements PRD.md 
   
-Software Development Process SDP.md
+   Software Development Process SDP.md
+   
+
+
+
