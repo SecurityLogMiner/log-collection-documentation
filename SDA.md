@@ -104,7 +104,7 @@ The web frontend will provide the user registration, account login, and distribu
 
 The web frontend will also house the user documentation. See (documentation)[#documentation-component] section.
 
-Repo: [Web Front-End](https://github.com/SecurityLogMiner/log-collection-frontend)
+[Web Front-End Repository](https://github.com/SecurityLogMiner/log-collection-frontend)
 
 ### Client Component
 The client will consist of a GUI (default) that prompts the user to provide either 
@@ -124,7 +124,7 @@ of the log for each of the supplied paths, a destination IP/port, and the
 certificate and private key information they were supplied from the web
 interface.
 
-Repo: [client](https://github.com/SecurityLogMiner/log-collection-client)
+[Client Repository](https://github.com/SecurityLogMiner/log-collection-client)
 
 ### API Component
 This component of the product will handle all the requests from the client, and
@@ -167,7 +167,7 @@ Example Endpoints:
     - post request the passes a json object containing the items in the
       configuration file.
 
-Repo: [api](https://github.com/SecurityLogMiner/log-collection-api)
+[API Repository](https://github.com/SecurityLogMiner/log-collection-api)
 
 ### Server Component
 Considering that the central server will be a destination for many users, it is
@@ -180,7 +180,7 @@ Each instance will store the incoming logs into a database
 instance and provide an extension to ElasticSearch should the user want that 
 additional functionality.
 
-Repo: [server][https://github.com/SecurityLogMiner/log-collection-server]
+[Server Repository][https://github.com/SecurityLogMiner/log-collection-server]
 
 ### Documentation Component
 It does not have to be complicated but it must be organized. Projects die when
@@ -204,7 +204,7 @@ At a minimum, the user documentation should include the following:
 
 ## Data Management
 
-### Client data:
+### Client Data
 Incoming log data will be defined using the configuration file located on the
 client. The current format is:
 ```
