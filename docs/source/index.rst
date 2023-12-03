@@ -9,7 +9,9 @@ Welcome to Secure Centralized Logging System's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: For Users
-   
+
+   /userDocs/gettingStarted
+   /userDocs/dashInfo
 
 
 .. toctree::
