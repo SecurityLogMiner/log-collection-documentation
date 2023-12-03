@@ -7,15 +7,22 @@
 3. [System Overview](#system-overview)
 4. [Architectural Patterns](#architectural-patterns)
 5. [Component Descriptions](#component-descriptions)
-6. [Data Management](#data-managament)
-7. [Interface Design](#interface-design)
-8. [Considerations](#considerations)
-9. [Security](#security)
-10. [Performance](#performance)
-11. [Maintenance and Support](#maintenance-and-support)
-13. [Deployment Strategy](#deployment-strategy)
-14. [Testing Strategy](#testing-strategy)
-15. [Glossary](#glossary)
+6. [Web Frontend Component](#web-frontend-component)
+7. [Client Component](#client-component)
+8. [API Component](#api-component)
+9. [Server Component](#server-component)
+10. [Documentation Component](#documentation-component)
+11. [Data Management](#data-managament)
+12. [Client Data](#client-data)
+13. [Server Data](#server-data)
+14. [Interface Design](#interface-design)
+15. [Considerations](#considerations)
+16. [Security](#security)
+17. [Performance](#performance)
+18. [Maintenance and Support](#maintenance-and-support)
+19. [Deployment Strategy](#deployment-strategy)
+20. [Testing Strategy](#testing-strategy)
+21. [Glossary](#glossary)
 
 ---
 
@@ -58,7 +65,7 @@ TLS over TCP sockets, allowing for low-latency monitoring and data feeding.
 
 ---
 
-## Architectural Patterns
+## Architectural Pattern
 We will adapt the client-server, producer-consumer, event-sourcing, and 
 microservices patterns. 
 
@@ -76,7 +83,7 @@ Any component that needs to handle the input -> output of data asyncronously wil
 benefit from using threads to break up tasks for efficiency of time and/or
 memory.
 
-### Event Sourcing Pattern:
+### Event Sourcing Pattern
 For flexible, real-time data handling, this pattern can be beneficial to stream 
 and store log data continuously.
 
@@ -86,7 +93,7 @@ and store log data continuously.
 
 ## Component Descriptions
 
-### Web Frontend component:
+### Web Front-End Component
 The web frontend will provide the user registration, account login, and distribution interface for the following:
 
 - TLS certificates and their private keys
@@ -99,7 +106,7 @@ The web frontend will also house the user documentation. See (documentation)[#do
 
 Repo: (web frontend)[https://github.com/SecurityLogMiner/log-collection-frontend]
 
-### Client component:
+### Client Component
 The client will consist of a GUI (default) that prompts the user to provide either 
 their OTP or user/pass. Once authenticated, the user will have full visibility of 
 log data. The user will be able to interact with each log source, download log 
@@ -119,7 +126,7 @@ interface.
 
 Repo: (client)[https://github.com/SecurityLogMiner/log-collection-client]
 
-### API component:
+### API Component
 This component of the product will handle all the requests from the client, and
 on behalf of the client, including:
 - account creation/deletion/authentication
@@ -145,7 +152,7 @@ in a safe location.
 Each client should be able to access account information by providing api
 verification tokens.
 
-Example endpoints:
+Example Endpoints:
 - /users
     - returns list of users (server access only)
 - /revoke/user
@@ -162,7 +169,7 @@ Example endpoints:
 
 Repo: (api)[https://github.com/SecurityLogMiner/log-collection-api]
 
-### Server component:
+### Server Component
 Considering that the central server will be a destination for many users, it is
 important that this component of the project can scale in the future. For now,
 during beta testing, the server should be able to create isolated instances for
@@ -175,7 +182,7 @@ additional functionality.
 
 Repo: (server)[https://github.com/SecurityLogMiner/log-collection-server]
 
-### Documentation component:
+### Documentation Component
 It does not have to be complicated but it must be organized. Projects die when
 the documentation is either unavailable or lacks enough information to help users
 (and developers) get started.
@@ -217,28 +224,28 @@ credentials path/to/creds
 pkey path/to/private/key
 ```
 
-### Server data:
+### Server Data
 Each user will require an isolated database instance and each log source will be
 stored in a corresponding table. 
 
-#### user-uuid table:
+#### user-uuid Table
 The user database will contain all the users that have created an account and
 will be mapped to a unique user id using a key:value structure. The key will be
 encrypted and only available to the server using the server's private key. Access
 Control lists should be established to protect this private key until an
 improvement is proposed.
 
-#### uuid-ip table:
+#### uuid-ip Table
 Using the unique user id will identify the instance database containing the IP
 and port information of all users.
 
-#### uuid-cert table:
+#### uuid-cert Table
 The unique user id and certificate info, where the certificate information is
 encrypted using the CLIENT's public key and can only be decrypted using the
 CLIENT's private key. The server will not have access to the data, other than
 deleting the key value pair and reissuing a certificate. 
 
-#### uuid-secret table:
+#### uuid-secret Table
 Key-Value pair containing the user id and corresponding TOTP secret, ecrypted by
 the server public key. This secret is not the same as the secret used with the
 certificate.
@@ -248,6 +255,14 @@ certificate.
 ---
 
 ## Interface Design
+
+The interface design will consists of event logs coming from a primary source such as an endpoint. This data will be showcased and alerted and notify the system whether the log 
+information contains malicious content.
+
+The majority of the details provided will be encapsulated by the <a href="#component-descriptions" style="font-size: smaller;">component descriptions.</a>
+The interface will consist of a front-end implementation using Svelte and Rust for the backend functionality.
+
+
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -264,7 +279,6 @@ private key should not be stored on the server but the server will have read
 access to the user and uuid tables. If the user deletes their account, their
 information should be removed from all databases and tables.
 
-Focus on: Confidentiality, Integrity, Availability
 
 ### Performance
 Long-term goal is that the server is able to scale the database instances for all
