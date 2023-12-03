@@ -273,7 +273,7 @@ users using the service.
 While system dependent, the client should be able to handle around 5K events per 
 second. Read the following for Event-Per-Second:
 
-![Event Per Second](https://content.solarwinds.com/creative/pdf/Whitepapers/estimating_log_generation_white_paper.pdf)
+[Event Per Second](https://content.solarwinds.com/creative/pdf/Whitepapers/estimating_log_generation_white_paper.pdf)
 
 ### Maintenance and Support
 Members of the organization are able to help maintain the project, with a
