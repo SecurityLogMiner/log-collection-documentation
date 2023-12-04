@@ -271,7 +271,7 @@ information contains malicious content.
 The majority of the details provided will be encapsulated by the <a href="#component-descriptions" style="font-size: smaller;">component descriptions.</a>
 The interface will consist of a front-end implementation using Svelte and Rust for the backend functionality.
 
-![](login-design.png "User Login Page")
+Our UI designs are still in-progress.
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
