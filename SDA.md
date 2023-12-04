@@ -202,6 +202,9 @@ At a minimum, the user documentation should include the following:
     - layout
     - how to view logs
 
+Developer and User documentation will be hosted on ReadTheDocs.
+[Doc Project Link](https://securitylogminer-doc-repo.readthedocs.io/en/latest/)
+
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
@@ -268,7 +271,7 @@ information contains malicious content.
 The majority of the details provided will be encapsulated by the <a href="#component-descriptions" style="font-size: smaller;">component descriptions.</a>
 The interface will consist of a front-end implementation using Svelte and Rust for the backend functionality.
 
-
+Our UI designs are still in-progress.
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -283,8 +286,12 @@ The server will generate the client's certificate and private key. This private
 key will have to be randomly generated using openssl-genpkey. The client's
 private key should not be stored on the server but the server will have read 
 access to the user and uuid tables. If the user deletes their account, their
-information should be removed from all databases and tables.
+information should be removed from all databases and tables. The server will use 
+role-based access control to ensure users can only perform the actions that they 
+are authorized for. TLS will ensure encrypted data transmission. The team will create 
+its own Certificate Authority to sign the client and server TLS certificates.
 
+---
 
 ### Performance
 Long-term goal is that the server is able to scale the database instances for all
@@ -295,6 +302,12 @@ second. Read the following for Event-Per-Second:
 
 
 [Event Per Second](https://content.solarwinds.com/creative/pdf/Whitepapers/estimating_log_generation_white_paper.pdf)
+
+Performance Testing: Conduct performance testing to identify bottlenecks and optimize critical parts of the system.
+
+Monitoring: Implement performance monitoring to track resource utilization, response times, and system health.
+
+Load Balancing: Implement load balancing to distribute traffic evenly across multiple system instances.
 
 ### Maintenance and Support
 Members of the organization are able to help maintain the project, with a
