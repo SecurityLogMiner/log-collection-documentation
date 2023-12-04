@@ -202,6 +202,9 @@ At a minimum, the user documentation should include the following:
     - layout
     - how to view logs
 
+Developer and User documentation will be hosted on ReadTheDocs.
+[Doc Project Link](https://securitylogminer-doc-repo.readthedocs.io/en/latest/)
+
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
