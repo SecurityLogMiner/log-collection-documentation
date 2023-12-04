@@ -18,9 +18,9 @@ Welcome to Secure Centralized Logging System's documentation!
    :maxdepth: 2
    :caption: For Developers
 
-   Product Requirements Document <PRD>
+   /devDocs/PRD
 
-   Software Development Process <SDP>
+   /devDocs/SDP
 
    Software Design & Architecture 
 
