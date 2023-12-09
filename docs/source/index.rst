@@ -22,7 +22,7 @@ Welcome to Secure Centralized Logging System's documentation!
 
    /devDocs/SDP
 
-   /devDocs/SDA(1)
+   /devDocs/SDA (1)
 
   
 
