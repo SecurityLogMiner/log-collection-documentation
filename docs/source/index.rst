@@ -22,7 +22,9 @@ Welcome to Secure Centralized Logging System's documentation!
 
    /devDocs/SDP
 
-   Software Design & Architecture 
+   /devDocs/SDA(1)
+
+  
 
 
 
