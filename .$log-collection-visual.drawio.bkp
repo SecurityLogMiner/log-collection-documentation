@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-02-27T08:14:07.095Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="z5Rn2-YuhxGsSN0_zjYs" version="22.1.16" type="device" pages="2">
+<mxfile host="Electron" modified="2024-02-27T08:12:32.041Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="hyGFVpVMA7U78tLOIfL0" version="22.1.16" type="device" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="4243" dy="-195" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -236,7 +236,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="z3ghqdZnaFvQ2lIqNsuo" name="Page-2">
-    <mxGraphModel dx="2385" dy="1774" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1834" dy="1325" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -271,49 +271,31 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="UOFxqfKqcElQiMe-fhxW-9" value="stop log" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="364" y="-171" width="120" height="60" as="geometry" />
+          <mxGeometry x="293" y="-193" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UOFxqfKqcElQiMe-fhxW-21" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UOFxqfKqcElQiMe-fhxW-11" target="UOFxqfKqcElQiMe-fhxW-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="UOFxqfKqcElQiMe-fhxW-11" value="view running logs" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="329" y="23" width="120" height="60" as="geometry" />
+          <mxGeometry x="295" y="-41" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UOFxqfKqcElQiMe-fhxW-23" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UOFxqfKqcElQiMe-fhxW-13" target="UOFxqfKqcElQiMe-fhxW-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="UOFxqfKqcElQiMe-fhxW-13" value="view database" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="170" y="195" width="120" height="60" as="geometry" />
+          <mxGeometry x="225" y="132" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UOFxqfKqcElQiMe-fhxW-15" value="show menu options" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="2" y="-113.5" width="109" height="109" as="geometry" />
         </mxCell>
-        <mxCell id="UOFxqfKqcElQiMe-fhxW-28" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UOFxqfKqcElQiMe-fhxW-17" target="UOFxqfKqcElQiMe-fhxW-27">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="UOFxqfKqcElQiMe-fhxW-17" value="&lt;u&gt;prompt:&lt;br&gt;&lt;/u&gt;&lt;br&gt;enter log path and desired table name:" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;align=left;spacingLeft=10;spacingRight=10;" vertex="1" parent="1">
-          <mxGeometry x="641" y="-421" width="127" height="119" as="geometry" />
-        </mxCell>
-        <mxCell id="UOFxqfKqcElQiMe-fhxW-30" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UOFxqfKqcElQiMe-fhxW-20" target="UOFxqfKqcElQiMe-fhxW-24">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="610" y="-354" width="127" height="119" as="geometry" />
         </mxCell>
         <mxCell id="UOFxqfKqcElQiMe-fhxW-20" value="todo!(show all logs in some sort of grid layout" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="602" y="-89" width="210" height="178" as="geometry" />
         </mxCell>
-        <mxCell id="UOFxqfKqcElQiMe-fhxW-31" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UOFxqfKqcElQiMe-fhxW-22" target="UOFxqfKqcElQiMe-fhxW-24">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="UOFxqfKqcElQiMe-fhxW-22" value="much like the &quot;view running logs option&quot;, show the existing database tables and possibly the incoming live data" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="488" y="218" width="230" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="UOFxqfKqcElQiMe-fhxW-24" value="back to menu" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="1173" y="-43" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UOFxqfKqcElQiMe-fhxW-29" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UOFxqfKqcElQiMe-fhxW-27" target="UOFxqfKqcElQiMe-fhxW-24">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UOFxqfKqcElQiMe-fhxW-27" value="start log" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;align=left;rounded=0;spacingLeft=10;spacingRight=10;" vertex="1" parent="1">
-          <mxGeometry x="911.5" y="-401.5" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
