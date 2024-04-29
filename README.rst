@@ -3,4 +3,4 @@ Version 0.1
 
 
 
-https://securitylogminer-doc-repo.readthedocs.io/
+https://log-collection-service.readthedocs.io/en/latest/
