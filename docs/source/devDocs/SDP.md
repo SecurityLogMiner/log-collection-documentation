@@ -69,16 +69,7 @@ the only way to have a discussion and reach an optimal solution.
 
 ## Roles and Responsibilities
 
-Due to the team size, all members are encourage to collabarate in every section
-of the product. Repository admins are put in place to create stable development
-and feature-testing branches.
-
-As of now:
-- Jicxer is the frontend admin.
-- murchej is the server admin.
-- endepointe is the client admin.
-- khuynh2002 is the documentation admin.
-
+Due to the team size, all members are encouraged to collaborate in every section of the product. Repository admins are put in place to create stable development and feature-testing branches. Both Jicxer and murchej are the client admins who split the responsibilities between the two of them following the departure of the other two members of the team.
 ## Tools and Technologies
 
 The languages chosen for each repo may vary. For example, the client repository
