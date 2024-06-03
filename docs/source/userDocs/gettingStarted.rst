@@ -7,45 +7,47 @@ The collection and storage of system and application logs is designed with ease-
 
 
 
+
 Creating an Account
 --------------------------
 The log collection client will require an Amazon Web Services account to access the centralized server.
-[Create an AWS account](https://portal.aws.amazon.com/billing/signup#/start/email)
+.. _Create an AWS account: https://portal.aws.amazon.com/billing/signup#/start/email
+
 Set up the Identity and Access Management account privileges as a user.
     Copy your credentials such as your AWS access key and AWS secret access key
 
 Store these variables into ~/.aws/credentials
-```
-[default] 
-  aws_access_key_id=YOUR-ACCESS-KEY
-  aws_secret_access_key=YOUR-SECRET-KEY
-```
+.. code-block::
+    [default] 
+    aws_access_key_id=YOUR-ACCESS-KEY
+    aws_secret_access_key=YOUR-SECRET-KEY
+
 
 Installation
 ------------------
 First off, clone the client
-```
-git clone https://github.com/SecurityLogMiner/log-collection-client.git
-```
+
+.. code-block::
+    git clone https://github.com/SecurityLogMiner/log-collection-client.git
+
 Run the install script to install client dependencies usch as AWS CLI, Terraform and Rust Programming Language
-```
-./install.sh
-```
+.. code-block::
+    ./install.sh
 Use the Terraform to create the user profile and grant proper permissions to access the client.
-```
-terraform init
-terraform plan
-terraform apply
-```
+.. code-block::
+    terraform init
+    terraform plan
+    terraform apply
+
 
 Running the Client
 -------------------------------
 Start the log collector through Rust 
-```
-cd log-collection-client
-cargo install
-cargo run
-```
+.. code-block::
+    cd log-collection-client
+    cargo install
+    cargo run
+
 Note: Be sure to activate the Rust environment by configuring the PATH environment variable Configuring the PATH environment variable
 
 Currently, the log collector can:
@@ -59,10 +61,10 @@ Configuration Guidelines
 Configure toml file The client will have a default toml file that seeks configurations. 
 Specify what log files the client will look for and what AWS DynamoDB table you'd like to store them in. 
 The formatting for the toml file is as follows:
-```
-#default.toml
-[[dynamodb.package]]
-source = "<Source-file>"
-table = "<Table-name>"
-```
+.. code-block::
+    #default.toml
+    [[dynamodb.package]]
+    source = "<Source-file>"
+    table = "<Table-name>"
+
 
