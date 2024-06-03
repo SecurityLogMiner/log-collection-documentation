@@ -6,6 +6,8 @@ The collection and storage of system and application logs is designed with ease-
 
 
 
+
+
 Creating an Account
 --------------------------
 The log collection client will require an Amazon Web Services account to access the centralized server.
@@ -19,6 +21,7 @@ Store these variables into ~/.aws/credentials
     [default] 
     aws_access_key_id=YOUR-ACCESS-KEY
     aws_secret_access_key=YOUR-SECRET-KEY
+
 
 Installation
 ------------------
@@ -36,6 +39,7 @@ Use the Terraform to create the user profile and grant proper permissions to acc
     terraform plan
     terraform apply
 
+
 Running the Client
 -------------------------------
 Start the log collector through Rust 
@@ -43,6 +47,7 @@ Start the log collector through Rust
     cd log-collection-client
     cargo install
     cargo run
+
 Note: Be sure to activate the Rust environment by configuring the PATH environment variable Configuring the PATH environment variable
 
 Currently, the log collector can:
@@ -61,4 +66,5 @@ The formatting for the toml file is as follows:
     [[dynamodb.package]]
     source = "<Source-file>"
     table = "<Table-name>"
+
 
