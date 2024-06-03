@@ -66,27 +66,20 @@ complement the service the central storage server provides.
     - The system should be able to collect data from the specified source.
     - Specify supported data formats for efficient data parsing.
 
-2. **TLS Connection Establishment:**
-    - Implement TLS over TCP socket creation and management.
-    - Create, Update, and Revoke certificates with an in-house CA manager
-
-3. **Data Processing and Serialization:**
+2. **Data Processing and Serialization:**
     - The collected data should be processed and serialized for transmission over the TCP connection.
 
-4. **Error Handling and Reliability:**
+3. **Error Handling and Reliability:**
     - Implement error detection and correction mechanisms.
-    - TCP handles retransmission of lost or corrupted data.
     - Implement system monitoring and alerting to reduce downtime during system degradation
 
-5. **Destination Data Reception:**
+4. **Destination Data Reception:**
     - Develop a system of database I/O.
     - Create a procedure to integrate with ElasticSearch.
       
-6. **User Authentication:**
-    - Whitelist specific user IP addresses.
-    - Key-value store mapping users to certificates.
-    - Mechanism for revoking certificates if needed.
-    - Create keys for the user to match certificate values.
+5. **User Authentication:**
+    - Users permissions are handled with principles of least priveleges
+    - Granular permissions using AWS IAM
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -123,21 +116,8 @@ complement the service the central storage server provides.
 
 ## User Experience and Usability Plan
 
-A first-time user will navigate to the product page (frontend repo) read about
-the product software, and make a decision about whether this service fits their
-needs. If their needs can be met with service provided, they will create an
-account and be redirected to their account dashboard.
-
-From their account dashboard, they will be able to:
-- download their certificate and private key
-- download the sofware along with the license
-- copy their one-time-password (OTP) information (important)
-- view existing log sources (not the data) being collected
-
-The user will install the software (Tauri app) onto their machine.
-
-When that process is complete, they will run the binary (doubleclick/cli) and be
-presented with a login screen where they will enter their OTP (or user/pass).
+The user will need to create an AWs account to access the client.
+The credentials will be handled by the AWS Identity and Access Management systems
 
 When they have successfully authenticated, full visibility of log data will be 
 available. The user will be able to interact with each log source, download their
@@ -152,23 +132,16 @@ as the project progresses.
 
 ## Technical Architecture and Choices
 
-The service running on the client machine will be written in Rust. The interface 
-for client machines will be written using Tauri, another Rust-based project.
+The service running on the client machine will be written in Rust.
 
 The reason for Rust being its ability to write and compile to multiple 
 operating systems and handle threading and async operations. Along with its 
 platform versatility, Rust's *cargo* command line tool has options for testing 
 and documentation generation.
 
-Tauri makes GUI creation simple. Given its cross-platform compatibility, due to
-it being written in Rust, just makes sense.
+The service running on the client machine will be written in Rust. Rust is chosen because it can write and compile to multiple operating systems and handle threading and async operations. Along with its platform versatility, Rust's cargo command-line tool has options for testing and documentation generation. The service running on the server will be a mix of languages, such as Terraform, shell, and Rust. AWS DynamoDB is a NoSQL database to store logs on a centralized server.
 
-The service running on the server will be a mix of languages, such as Terraform,
-shell, Python, and Rust if needed. A relational database will be used, with
-options left open to the user for integration with ElasticSearch if they choose.
 
-The website provides the user signup, software distribution, and documentation
-will use Svelte. 
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -183,9 +156,6 @@ months for user testing/additional development.
 
 ---
 
-## Dependencies and Bottlenecks
-
-Still todo but: team size, creating the in-house CA, using Rust
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -198,60 +168,17 @@ as outlined in the SDP document [PROVIDE LINK TO SDP README].
 
 ### Test Conditions to be met:
 
-#### API Repo:
-- **All API endpoints:**
-    1. Protect API endpoints through access verification
 
-- **Public Key Infrastructure API endpoint must handle the following:**
-    1. Issue certificates
-    2. Verify the identity of the requesting user requesting a digital signature 
-    3. Revoke certificates of specific users
-    4. Renew certificates of specific users
-    5. Key Pair storage and retrieval
-    6. Certificate policy (cert lifetime, validation, key length reqs, etc.)
-    7. Follows industry standards (x509, bitlength, cipher type, etc.)
-    8. PKI audit logging
-    9. PKI hierarchy (masterkey -> prodkey1 -> [prodkey2, ..., prodkeyN])
-    10. Failure Recovery (offline masterkey) 
-
-- **User management api endpoints must handle the following:**
-    1. Create, Read, Update, and Delete users
-    2. Account management (signin/out/delete,cert retrieval/renewal, etc.)
-    3. Grant or revoke user certification.
-    4. Whitelist specific IP addresses.
-    5. Key-value to certificate matching for user authentication.
-
-- **Dashboard api endpoints must handle the following:**
-    1. Data visualization 
-
-- **Software distribution api endpoints must handle the following:**
-    1. Provide links to download software for existing platforms
-
-#### Frontend Repo:
-1. Provide the interface to interact with the API
-2. Device agnostic
-3. Contains links to User and Developer documentation
-
-#### Server Repo:
-1. Create a TLS connection with Client
-2. Create a database specific to the user
-3. Each user database has a table for each input log source
-4. Delete database on user deletion
-5. Automate the initialization of Server Instance
 
 #### Client Repo:
-1. Create a TLS connection with Server 
-2. Command line and Graphical User Interface to configure:
+1. Command line and Graphical User Interface to configure:
     - the destination address
-    - certificate (supplied from API repo)
     - path(s) to log source(s)
 
 #### Documentation Repo:
 1. Provides setup instructions for:
     - account management
-    - certificate management
-    - client-server connection establishment
-2. Establish a [Changelog](SUPPLY LINK TO CHANGELOG)
+    - client-deployment
 3. Continuous Documentation Deployment here: https://securitylogminer-doc-repo.readthedocs.io/en/latest/
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
