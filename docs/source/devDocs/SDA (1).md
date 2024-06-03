@@ -7,29 +7,25 @@
 3. [System Overview](#system-overview)
 4. [Architectural Patterns](#architectural-patterns)
 5. [Component Descriptions](#component-descriptions)
-6. [Web Frontend Component](#web-frontend-component)
-7. [Client Component](#client-component)
-8. [API Component](#api-component)
-9. [Server Component](#server-component)
-10. [Documentation Component](#documentation-component)
-11. [Data Management](#data-managament)
-12. [Client Data](#client-data)
-13. [Server Data](#server-data)
-14. [Interface Design](#interface-design)
-15. [Considerations](#considerations)
-16. [Security](#security)
-17. [Performance](#performance)
-18. [Maintenance and Support](#maintenance-and-support)
-19. [Deployment Strategy](#deployment-strategy)
-20. [Testing Strategy](#testing-strategy)
-21. [Glossary](#glossary)
+6. [Client Component](#client-component)
+7. [Documentation Component](#documentation-component)8
+8. [Data Management](#data-managament)
+9. [Client Data](#client-data)
+10. [Server Data](#server-data)
+11. [Interface Design](#interface-design)
+12. [Considerations](#considerations)
+13. [Security](#security)
+14. [Performance](#performance)
+15. [Maintenance and Support](#maintenance-and-support)
+16. [Deployment Strategy](#deployment-strategy)
+17. [Testing Strategy](#testing-strategy)
+18. [Glossary](#glossary)
 
 ---
 
 ## Introduction
-The project will read log data and send it to a centralized database server. 
-The server will have the option to integrate with ElasticSearch for 
-additional visualization and investigative functionality. 
+This document provides a comprehensive guide to the development methodology, outlining activities, goals, roles, tools, testing procedures, timelines, risk management, documentation practices, and continuous improvement strategies.
+
 
 The log collection service should take an event log, process each event 
 line, and send the data to a central server. The priority is the confidentiality, 
@@ -57,8 +53,7 @@ event logs sent by user endpoints. AWS will deploy the server.
 
 Starting at the Data Source, event lines are sent to the Data Processing and 
 Monitoring module, where they are serialized and staged to be sent across the 
-network. The internal and external communication will be managed through 
-TLS over TCP sockets, allowing for low-latency monitoring and data feeding. 
+network.
 
 ![](log-collection-visual.png "Log Collection System")
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
@@ -67,17 +62,11 @@ TLS over TCP sockets, allowing for low-latency monitoring and data feeding.
 
 
 ## Architectural Pattern
-We will adapt the client-server, producer-consumer, event-sourcing, and 
-microservices patterns. 
+We will adapt the client-server, producer consumer pattern, and event sourcing pattern.
 
 ### Client Server Pattern
 The client-server model, where the clients on endpoints send event logs to a 
 centralized server for processing and storage.
-
-### Microservices Pattern
-Using an API to handle the data access, each api endepoint is responsible 
-for a specific aspect. This will make updating and maintenance easier by
-isolating the frontend, server, client, and api components.
 
 ### Producer Consumer Pattern
 Any component that needs to handle the input -> output of data asyncronously will
@@ -96,95 +85,21 @@ and store log data continuously.
 
 
 ### Web Front-End Component
-The web frontend will provide the user registration, account login, and distribution interface for the following:
-
-- TLS certificates and their private keys
-- ability to copy their OTP (important because message key is not preserved)
-- software binary distribution.
-- quick glance of existing log sources (not the log data itself)
-- The instance IP and port connected to their account
+The web frontend will provide the documentation and act as the public landing page for the project.
 
 The web frontend will also house the user documentation. See (documentation)[#documentation-component] section.
 
-[Web Front-End Repository](https://github.com/SecurityLogMiner/log-collection-frontend)
 
 ### Client Component
-The client will consist of a GUI (default) that prompts the user to provide either 
-their OTP or user/pass. Once authenticated, the user will have full visibility of 
-log data. The user will be able to interact with each log source, download log 
+The client will have full visibility of log data. The user will be able to interact with each log source, download log 
 data from the central server, and add/remove log sources.
-
-While the default frontend will be a GUI, the user has the option of running the
-software from a command-line interface. 
-
-In either case, the client frontend will use the same functionality to accomplish
-the tasks.
 
 From either the GUI or command-line interface, the user will provide
 configuration file that contains a path (or paths) to the log sources, the format
-of the log for each of the supplied paths, a destination IP/port, and the
-certificate and private key information they were supplied from the web
-interface.
+of the log for each of the supplied paths and the table name on AWS.
 
 [Client Repository](https://github.com/SecurityLogMiner/log-collection-client)
 
-### API Component
-This component of the product will handle all the requests from the client, and
-on behalf of the client, including:
-- account creation/deletion/authentication
-- software distribution
-- certificate download
-- certificate revokation/renewal
-- Single OTP message key issuance 
-- user list retrieval (server only)
-- instance configuration
-
-These api endpoints must also be protected. The server component must be the only
-entity that is allowed to revoke and renew certificates, issue OTPs, and retrieve a list of existing users. 
-
-Taking actions on behalf of the user requires that the client verify themselves 
-with a OTP or user/pass combination. When the endpoint receives the request, the 
-corresponding database tables are updated with the new certificate and private key 
-information generated by the server. The database tables are encrypted by the user's 
-public key. This is important - Clients are not allowed to generate their own 
-certificates or private keys. The private keys issued to the user will never be 
-preserved on the server. The user will be responsible for keeping their credentials 
-in a safe location.
-
-Each client should be able to access account information by providing api
-verification tokens.
-
-
-Example Endpoints:
-
-- /users
-    - returns list of users (server access only)
-- /revoke/user
-    - revokes the certificate on behalf of the user.
-- /renew/user
-    - renews the certificate on behalf of the user
-- /issue
-    - user receives a message key to initiate their TOTP in their authenticator
-      application. The message key is not preserved and the secret key is shared
-      between the client authenticator app and the uuid-secret table
-- /config
-    - post request the passes a json object containing the items in the
-      configuration file.
-
-[API Repository](https://github.com/SecurityLogMiner/log-collection-api)
-
-### Server Component
-Considering that the central server will be a destination for many users, it is
-important that this component of the project can scale in the future. For now,
-during beta testing, the server should be able to create isolated instances for
-each user that is generating incoming logs.
-
-Each instance will be tied to a user using a unique key generated an existing, and validated, user. 
-Each instance will store the incoming logs into a database 
-instance and provide an extension to ElasticSearch should the user want that 
-additional functionality.
-
-[Server Repository](https://github.com/SecurityLogMiner/log-collection-server)
 
 ### Documentation Component
 It does not have to be complicated but it must be organized. Projects die when
@@ -198,9 +113,6 @@ At a minimum, the user documentation should include the following:
     - how to run the client
     - configuration guidelines
 
-2. Dashboard Information:
-    - layout
-    - how to view logs
 
 Developer and User documentation will be hosted on ReadTheDocs.
 [Doc Project Link](https://securitylogminer-doc-repo.readthedocs.io/en/latest/)
@@ -213,23 +125,11 @@ Developer and User documentation will be hosted on ReadTheDocs.
 
 
 ### Client Data
-Incoming log data will be defined using the configuration file located on the
-client. The current format is:
+Incoming log data will be defined using the configuration file located on the client. The current format is:
 ```
-# server address to connect to:
-server_address 0.0.0.0 
-
-# Server port to use:
-server_port 54321
-
-# Format of log file:
-field_values field_1 field_2 ... field_n
-
-# Path to TLS Credentials:
-credentials path/to/creds
-
-# Path to Private key:
-pkey path/to/private/key
+[[dynamodb.package]]
+source = "./logs/test1.log"
+table = "SecurityLog1"
 ```
 
 
@@ -237,27 +137,6 @@ pkey path/to/private/key
 Each user will require an isolated database instance and each log source will be
 stored in a corresponding table. 
 
-#### user-uuid Table
-The user database will contain all the users that have created an account and
-will be mapped to a unique user id using a key:value structure. The key will be
-encrypted and only available to the server using the server's private key. Access
-Control lists should be established to protect this private key until an
-improvement is proposed.
-
-#### uuid-ip Table
-Using the unique user id will identify the instance database containing the IP
-and port information of all users.
-
-#### uuid-cert Table
-The unique user id and certificate info, where the certificate information is
-encrypted using the CLIENT's public key and can only be decrypted using the
-CLIENT's private key. The server will not have access to the data, other than
-deleting the key value pair and reissuing a certificate. 
-
-#### uuid-secret Table
-Key-Value pair containing the user id and corresponding TOTP secret, encrypted by
-the server public key. This secret is not the same as the secret used with the
-certificate.
 
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
@@ -271,8 +150,6 @@ information contains malicious content.
 The majority of the details provided will be encapsulated by the <a href="#component-descriptions" style="font-size: smaller;">component descriptions.</a>
 The interface will consist of a front-end implementation using Svelte and Rust for the backend functionality.
 
-Our UI designs are still in-progress.
-
 <a href="#table-of-contents" style="font-size: smaller;">back to top</a>
 
 ---
@@ -282,14 +159,7 @@ Our UI designs are still in-progress.
 ### Security
 Focus on: Confidentiality, Integrity, Availability
 
-The server will generate the client's certificate and private key. This private
-key will have to be randomly generated using openssl-genpkey. The client's
-private key should not be stored on the server but the server will have read 
-access to the user and uuid tables. If the user deletes their account, their
-information should be removed from all databases and tables. The server will use 
-role-based access control to ensure users can only perform the actions that they 
-are authorized for. TLS will ensure encrypted data transmission. The team will create 
-its own Certificate Authority to sign the client and server TLS certificates.
+The server will generate the client's public and private key. This private key will be generated through AWS. The client's private key should not be hardcoded, it is read in from the terraform script. If the user deletes their account, their information should be removed from all databases and tables The server will use role-based access control to ensure users can only perform the actions that they are authorized for. TLS will ensure encrypted data transmission. 
 
 ---
 
